@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/steps.css">
+    <link rel="stylesheet" href="src/css/main.css">
+
+    
+    <title>EnFLota</title>
+</head>
+<body>
+
+    <div id="site_wrap">
+        <header class="header">
+            <img src="src/img/logo.png" alt="">
+            <a href="http://">Rutas Y Viajes</a>
+            <a href="http://">Otros</a>
+            <a href="http://">FAQs</a>
+            header
+        </header>
+        <section class="featured_steps">
+            <span class="step_0 is_active"></span>
+            <span class="step_1 is_active ">
+                <h2>
+                    Elige el Destino
+                </h2>
+            </span>
+            <span class="step_2 ">
+            <h2>
+                Escoge tu Flota
+            </h2>
+            </span>
+            <span class="step_3">
+                <h2>
+                    Ingresa tus Datos
+                </h2>
+            </span>
+            <span class="step_4">
+                <h2>
+                    Realiza el Pago
+                </h2>
+            </span>
+            <span class="step_5"></span>
+            
+        </section>
+        <main class="featured_main center_child">
+            <form action="escogeTuFlota.html" method="POST" class="form_main">
+                <span class="radio_button">
+                    <label for="">Solo Ida</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Ida y Vuelta</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Multiples Destinos</label>
+                     <input type="radio" name="" id="">
+                </span>
+                <label for="">Origen</label>
+                <input type="text" value="Santa Cruz" disabled>
+                <label for="">Destino</label>
+                <select name="" id="">
+                    <option value="Sucre">Sucre</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Cochabamba">Cochabamba</option>
+                </select>
+                <label for="">Fecha de salida</label>
+                <input type="date" name="" id="">
+                <label for="">Cantidad de pasajeros</label>
+                <input type="number" name="" id="">
+                <input class="button button_form" type="submit" value="Buscar"  >
+                
+            </form >
+            
+        </main>
+        <footer class="featured_footer">
+            creditos
+        </footer>
+
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,15 @@
+.header{
+    display: grid;
+    grid-template-columns: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    grid-column: 3;
+    width: 80px;
+}
+.header a{
+    text-align: center;
+    text-decoration: none;
+    color: snow;
+}

@@ -1,0 +1,61 @@
+:root{
+    --main-resize-column: 1/span 8;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+    overflow-x: hidden;
+}
+#site_wrap{
+    height: 100vh;
+    background: snow;
+    display: grid;
+    grid-template-columns:1fr  repeat(6, minmax(0,1fr))1fr ;
+    grid-template-rows: 120px 100px 1fr 200px;
+    background-image: url("../img/fondo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header{
+    background-color: #3F3F41;
+    grid-column: var(--main-resize-column);
+}
+.featured_steps{
+    background-color: violet;
+    grid-column: var(--main-resize-column);
+}
+.featured_main{
+    background-color: rgb(209, 206, 201,0.7);
+    grid-column: 3 /span 4;
+    width: 100%;
+
+}
+.featured_footer{
+    background-color: #3F3F41;
+    grid-column: var(--main-resize-column);
+}
+
+
+@media screen and (max-width:480px){
+
+.featured_main{
+    grid-column: var(--main-resize-column);
+}
+
+
+}
+@media screen and (max-width:1024px){
+
+    .featured_main{
+        grid-column: var(--main-resize-column);
+        /* padding: 20px; */
+    }
+    .featured_steps{
+        grid-column: var(--main-resize-column);
+    }
+}
