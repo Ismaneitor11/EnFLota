@@ -76,11 +76,22 @@ input.button{
 }
 .radio_button{
     grid-column: 1/span 2;
-    font-size: 14px;
+    font-size: 12px;
+    padding: 5px;
 }
 .button_form{
     background-color: #1C6B9B;
     border-right: 1.5px  solid #3F3F41;
     border-bottom: 1.5px  solid #3F3F41;
     
+}
+
+@media screen and (max-width:480px){
+    .center_child{
+        background-color: rgb(209, 206, 201,0.7);
+        grid-column: 1 /span 8;
+        width: 100%;
+        padding: 0;
+    
+    }
 }
